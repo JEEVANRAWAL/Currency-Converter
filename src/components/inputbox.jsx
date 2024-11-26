@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 export default function Inputbox({
   labelName,
   amount,
@@ -12,9 +11,9 @@ export default function Inputbox({
 }) {
   return (
     <>
-      <div className="main-wrapper bg-white flex justify-between p-2 w-[100%] rounded-xl mb-2">
-        <div className="wrapper1 w-1/2 ">
-          <label className=" font-serif font-semibold">{labelName}</label>
+      <div className="main-wrapper bg-white flex flex-wrap justify-between p-2 w-full rounded-xl mb-2">
+        <div className="wrapper1 w-full md:w-1/2 mb-2 md:mb-0">
+          <label className="font-serif font-semibold">{labelName}</label>
           <br />
           <input
             className="outline-none w-full font-mono"
@@ -27,11 +26,11 @@ export default function Inputbox({
           />
         </div>
 
-        <div className="wrapper2">
-          <label className=" font-serif font-semibold">Currency Type</label>
+        <div className="wrapper2 w-full md:w-auto">
+          <label className="font-serif font-semibold">Currency Type</label>
           <br />
           <select
-            className="outline-none font-mono"
+            className="outline-none font-mono w-full md:w-auto"
             name="currency"
             id="name"
             value={selectCurrency}

@@ -1,5 +1,3 @@
-"use client";
-
 import { cn } from "../lib/utils"; // Optional: Utility for conditional className management
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";

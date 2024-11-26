@@ -41,7 +41,7 @@ export default function App() {
   return (
     <div>
       <div
-        className="main-container w-screen h-screen flex flex-col justify-center items-center"
+        className="main-container w-screen h-screen flex flex-col justify-center items-center bg-cover bg-center"
         style={{
           backgroundImage: `url(
             'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -50,11 +50,11 @@ export default function App() {
       >
         <TypewriterEffect words={words} />
         <TypewriterEffect words={words2} className="font-thin" />
-        <div className="display-container relative top-9 bg-gray-300 p-3 pt-5 w-[30%]  bg-opacity-70 border-[3px] border-white rounded-md">
+
+        <div className="display-container relative top-9 bg-gray-300 p-3 pt-5 w-[90%] sm:w-[70%] md:w-[50%] lg:w-[30%] bg-opacity-70 border-[3px] border-white rounded-md shadow-lg">
           <form
             onSubmit={(e) => {
               e.preventDefault();
-
               // convert();
             }}
           >
@@ -68,7 +68,7 @@ export default function App() {
             <button
               type="button"
               onClick={() => swap()}
-              className=" absolute top-[35%] left-[40%] bg-slate-500 rounded-xl px-4 py-1 font-mono"
+              className="absolute top-[38%] left-[40%] sm:left-[45%] bg-slate-500 rounded-xl px-4 py-1 font-mono"
             >
               Swap
             </button>
@@ -84,7 +84,7 @@ export default function App() {
               onClick={() => convert()}
               className="w-full bg-blue-600 text-white rounded-2xl py-3 hover:bg-blue-500 transition duration-700 font-mono"
             >
-              convert
+              Convert
             </button>
           </form>
         </div>
